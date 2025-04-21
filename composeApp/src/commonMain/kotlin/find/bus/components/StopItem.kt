@@ -15,7 +15,7 @@ import com.find.bus.styles.ItemStyles.*
 import com.find.bus.models.Stop
 
 @Composable
-fun StopCard(
+fun StopItem(
     data: Stop,
     onClick: () -> Unit,
 ) {
@@ -55,8 +55,8 @@ fun StopCard(
 
 @Preview
 @Composable
-fun PreviewStopCard() {
-    StopCard(
+fun PreviewStopItem() {
+    StopItem(
         data = Stop(
             stopId = "1",
             stopColor = "#61BB46",

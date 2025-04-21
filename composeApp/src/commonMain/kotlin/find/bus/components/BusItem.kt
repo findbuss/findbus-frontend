@@ -15,7 +15,7 @@ import com.find.bus.styles.ItemStyles.*
 import com.find.bus.models.Bus
 
 @Composable
-fun BusCard(
+fun BusItem(
     data: Bus,
     onClick: () -> Unit,
 ) {
@@ -62,8 +62,8 @@ fun BusCard(
 
 @Preview
 @Composable
-fun PreviewBusCard() {
-    BusCard(
+fun PreviewBusItem() {
+    BusItem(
         data = BusData(
             routeId = "101",
             routeColor = "#61BB46",
