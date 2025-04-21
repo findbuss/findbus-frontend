@@ -12,7 +12,7 @@ import androidx.compose.foundation.layout.Arrangement
 import com.find.bus.styles.theme.AppTheme
 
 object ItemStyles {
-    val ItemContainer = ColumnStyle(
+    val container = ColumnStyle(
         modifier = Modifier
             .fillMaxWidth()
             .background(AppTheme.colors.TertiaryBackground)
@@ -22,23 +22,18 @@ object ItemStyles {
         horizontalArrangement = Arrangement.spacedBy(8.dp)
     )
 
-    val CodeBox = Modifier
+    val box = Modifier
         .padding(horizontal = 8.dp, vertical = 4.dp)
         .clip(RoundedCornerShape(8.dp))
 
-    val IconButton = Modifier
+    val iconButton = Modifier
         .padding(8.dp)
         .clip(CircleShape)
 
-    val RowGap8 = Modifier
-        .padding(horizontal = 0.dp)
-        .wrapContentHeight()
-        .then(Modifier)
-
-    val TitleText = Modifier
+    val title = Modifier
         .weight(1f)
 
-    val IconStyle = Modifier
+    val icon = Modifier
         .size(24.dp)
 
 }

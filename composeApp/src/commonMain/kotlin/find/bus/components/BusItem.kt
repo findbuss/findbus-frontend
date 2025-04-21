@@ -11,7 +11,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.find.bus.styles.theme.AppTheme
-import com.find.bus.styles.components.ItemStyles.*
+import com.find.bus.styles.components.ItemStyles
 import com.find.bus.models.Bus
 
 @Composable
@@ -20,12 +20,12 @@ fun BusItem(
     onClick: () -> Unit,
 ) {
     Row(
-        modifier = ItemContainer.modifier,
-        verticalAlignment = ItemContainer.verticalAlignment,
-        horizontalArrangement = ItemContainer.horizontalArrangement
+        modifier = ItemStyles.container.modifier,
+        verticalAlignment = ItemStyles.container.verticalAlignment,
+        horizontalArrangement = ItemStyles.container.horizontalArrangement
     ) {
         Box(
-            modifier = CodeBox.background(Color(data.routeColor))
+            modifier = ItemStyles.box.background(Color(data.routeColor))
         ) {
             Text(
                 text = data.routeId,
@@ -36,25 +36,25 @@ fun BusItem(
         Text(
             text = data.routeLongName,
             style = AppTheme.typography.BoldText,
-            modifier = TitleText
+            modifier = ItemStyles.title
         )
 
         Text(
             text = data.nextBus,
             color = AppTheme.colors.Highlight,
             style = AppTheme.typography.DefaultText,
-            modifier = TitleText
+            modifier = ItemStyles.title
         )
 
         IconButton(
             onClick = { onClick },
-            modifier = IconButton
+            modifier = ItemStyles.iconButton
         ) {
             Icon(
                 imageVector = if (data.saved) Icons.Default.Bookmark else Icons.Default.BookmarkBorder,
                 contentDescription = "Save Route",
                 tint = if (data.saved) AppTheme.colors.Highlight else AppTheme.colors.SecondaryText,
-                modifier = IconStyle
+                modifier = ItemStyle.icon
             )
         }
     }
