@@ -1,4 +1,4 @@
-package com.find.bus.styles
+package com.find.bus.styles.components
 
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle

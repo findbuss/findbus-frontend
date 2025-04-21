@@ -9,8 +9,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.text.TextStyle
-import com.find.bus.styles.ButtonStyles
-import com.find.bus.styles.ButtonVariant
+import com.find.bus.styles.components.ButtonStyles
 import com.find.bus.styles.theme.AppTheme
 
 @Composable

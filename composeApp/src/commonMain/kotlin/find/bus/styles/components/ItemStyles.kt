@@ -1,4 +1,4 @@
-package com.seu.pacote.styles.theme
+package com.find.bus.styles.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*

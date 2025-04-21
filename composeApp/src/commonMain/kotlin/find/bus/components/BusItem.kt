@@ -11,7 +11,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.find.bus.styles.theme.AppTheme
-import com.find.bus.styles.ItemStyles.*
+import com.find.bus.styles.components.ItemStyles.*
 import com.find.bus.models.Bus
 
 @Composable
