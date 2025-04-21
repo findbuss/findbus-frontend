@@ -11,7 +11,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.find.bus.styles.theme.AppTheme
-import com.find.bus.styles.theme.CardStyles.*
+import com.find.bus.styles.ItemStyles.*
 import com.find.bus.models.Bus
 
 @Composable
@@ -20,9 +20,9 @@ fun BusCard(
     onClick: () -> Unit,
 ) {
     Row(
-        modifier = CardContainer.modifier,
-        verticalAlignment = CardContainer.verticalAlignment,
-        horizontalArrangement = CardContainer.horizontalArrangement
+        modifier = ItemContainer.modifier,
+        verticalAlignment = ItemContainer.verticalAlignment,
+        horizontalArrangement = ItemContainer.horizontalArrangement
     ) {
         Box(
             modifier = CodeBox.background(Color(data.routeColor))

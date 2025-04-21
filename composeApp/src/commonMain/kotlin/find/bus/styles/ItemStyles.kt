@@ -11,8 +11,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.foundation.layout.Arrangement
 import com.find.bus.styles.theme.AppTheme
 
-object CardStyles {
-    val CardContainer = ColumnStyle(
+object ItemStyles {
+    val ItemContainer = ColumnStyle(
         modifier = Modifier
             .fillMaxWidth()
             .background(AppTheme.colors.TertiaryBackground)
